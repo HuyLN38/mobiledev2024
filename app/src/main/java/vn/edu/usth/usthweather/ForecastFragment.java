@@ -66,6 +66,7 @@ public class ForecastFragment extends Fragment {
             }
             recyclerView.setAdapter(new MyItemRecyclerViewAdapter(PlaceholderContent.ITEMS));
         }
+        view.setBackgroundColor(0x20FF0000); // Set background color to green
         return view;
     }
 }
