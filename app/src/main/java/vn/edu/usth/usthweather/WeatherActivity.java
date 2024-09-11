@@ -17,7 +17,7 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                return new com.example.weatherapp.WeatherAndForecastFragment();
+                return new vn.edu.usth.usthweather.WeatherAndForecastFragment();
             }
 
             @Override
