@@ -1,10 +1,10 @@
 package vn.edu.usth.usthweather;
 
 import android.os.Bundle;
-import android.view.View;
-import android.view.WindowInsets;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class WeatherActivity extends AppCompatActivity {
 
@@ -13,12 +13,16 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        View myView = findViewById(R.id.weather_activity);
-        // Set the listener only after finding the View
-        myView.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
+        ViewPager viewPager = findViewById(R.id.viewPager);
+        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
-            public WindowInsets onApplyWindowInsets(View view, WindowInsets insets) {
-                return insets;
+            public Fragment getItem(int position) {
+                return new com.example.weatherapp.WeatherAndForecastFragment();
+            }
+
+            @Override
+            public int getCount() {
+                return 3; // Three instances of WeatherAndForecastFragment
             }
         });
     }
