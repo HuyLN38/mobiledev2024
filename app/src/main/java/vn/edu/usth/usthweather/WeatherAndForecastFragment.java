@@ -1,5 +1,5 @@
 // WeatherAndForecastFragment.java
-package com.example.weatherapp;
+package vn.edu.usth.usthweather;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;

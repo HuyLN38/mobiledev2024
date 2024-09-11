@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 public class WeatherFragment extends Fragment {
 
     public WeatherFragment() {
-        // Required empty public constructor
     }
 
     @Override
