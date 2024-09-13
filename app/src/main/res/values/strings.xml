@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">UsthWeather</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="weather_info">Weather Info</string>
+    <string name="city" />
+    <string name="hcm">Ho Chi Minh</string>
+    <string name="hanoi">Ha Noi</string>
+    <string name="danang">Da Nang</string>
+    <string name="weather" />
+    <string name="rainy">Rainy</string>
+    <string name="sunny">Sunny</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="snow">Snow</string>
+    <string name="mist">Mist</string>
+    <string name="drizzle">Drizzle</string>
+
+
+
 </resources>

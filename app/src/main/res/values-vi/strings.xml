@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thời tiết USTH</string>
+    <string name="weather_info">Thông tin thời tiết</string>
+    <string name="weather">Mưa</string>
+    <string name="city" />
+    <string name="hcm">Hồ Chí Minh</string>
+    <string name="hanoi">Hà Nội</string>
+    <string name="danang">Đà Nẵng</string>
+    <string name="rainy">Mưa</string>
+    <string name="sunny">Nắng</string>
+    <string name="cloudy">Âm u</string>
+    <string name="thunderstorm">Bão</string>
+    <string name="snow">Tuyết</string>
+    <string name="mist">Sương mù</string>
+    <string name="drizzle">Mưa phùn</string>
+
+</resources>

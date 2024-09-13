@@ -1,4 +1,3 @@
-// WeatherAndForecastFragment.java
 package vn.edu.usth.usthweather;
 
 import android.os.Bundle;
@@ -8,10 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import vn.edu.usth.usthweather.ForecastFragment;
-import vn.edu.usth.usthweather.R;
-import vn.edu.usth.usthweather.WeatherFragment;
-
 public class WeatherAndForecastFragment extends Fragment {
 
     @Override
@@ -19,8 +14,12 @@ public class WeatherAndForecastFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_weather_and_forecast, container, false);
 
+        Bundle args = getArguments();
+        WeatherFragment weatherFragment = new WeatherFragment();
+        weatherFragment.setArguments(args);
+
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.replace(R.id.weather_container, new WeatherFragment());
+        transaction.replace(R.id.weather_container, weatherFragment);
         transaction.replace(R.id.forecast_container, new ForecastFragment());
         transaction.commit();
 
