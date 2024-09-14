@@ -32,10 +32,6 @@
 
     </LinearLayout>
 
-
-
-
-
     <ImageView
         android:id="@+id/weatherIcon"
         android:layout_centerHorizontal="true"
